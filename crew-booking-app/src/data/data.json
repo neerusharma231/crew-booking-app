@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Rahul Sharma",
+    "role": "Director",
+    "rating": 4.5,
+    "location": "Mumbai",
+    "description": "Experienced film director with 8+ years in Bollywood projects.",
+    "verified": true
+  },
+  {
+    "id": 2,
+    "name": "Ankit Verma",
+    "role": "Assistant Director",
+    "rating": 3.8,
+    "location": "Delhi",
+    "description": "Worked as assistant director in multiple ad films and web series.",
+    "verified": true
+  },
+  {
+    "id": 3,
+    "name": "Priya Mehta",
+    "role": "Cinematographer",
+    "rating": 4.7,
+    "location": "Mumbai",
+    "description": "Creative cinematographer specializing in storytelling visuals.",
+    "verified": true
+  },
+  {
+    "id": 4,
+    "name": "Karan Singh",
+    "role": "Editor",
+    "rating": 4.2,
+    "location": "Chandigarh",
+    "description": "Professional video editor with strong post-production skills.",
+    "verified": true
+  },
+  {
+    "id": 5,
+    "name": "Neha Kapoor",
+    "role": "Script Writer",
+    "rating": 3.9,
+    "location": "Bangalore",
+    "description": "Passionate script writer for films and OTT platforms.",
+    "verified": true
+  },
+  {
+    "id": 6,
+    "name": "Amit Joshi",
+    "role": "Sound Engineer",
+    "rating": 4.3,
+    "location": "Pune",
+    "description": "Expert in sound design and audio mixing.",
+    "verified": true
+  },
+  {
+    "id": 7,
+    "name": "Simran Kaur",
+    "role": "Makeup Artist",
+    "rating": 4.6,
+    "location": "Amritsar",
+    "description": "Professional makeup artist for film and fashion shoots.",
+    "verified": true
+  },
+  {
+    "id": 8,
+    "name": "Rohit Gupta",
+    "role": "Production Manager",
+    "rating": 4.1,
+    "location": "Delhi",
+    "description": "Managed multiple film productions and logistics.",
+    "verified": true
+  }
+]
