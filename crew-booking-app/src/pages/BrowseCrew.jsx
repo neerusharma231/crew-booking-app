@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import crewData from "../data/data.json";
 import CrewCard from "../components/CrewCard";
 import FilterPanel from "../components/FilterPanel";
+import Navbar from "../components/Navbar";
 const BrowseCrew = () => {
   const [data, setData] = useState([]);
   const[min,setMin]=useState(0);
@@ -35,9 +36,15 @@ const BrowseCrew = () => {
     setLocation("");
   }
   return (
+    <>
+    
+   
+    <Navbar />
     <div className="min-h-screen bg-gray-950 text-white px-6 py-10">
       <h1 className="text-3xl font-semibold text-center mb-10">Browse Crew</h1>
-      <FilterPanel onFilter={handleFilter} onReset={handleReset}/>
+      <div className="max-w-6xl mx-auto mb-6">
+  <FilterPanel onFilter={handleFilter} onReset={handleReset} />
+</div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
         
         {filterData.length>0 ?(
@@ -51,6 +58,7 @@ const BrowseCrew = () => {
       )}
       </div>
     </div>
+     </>
   );
 };
 export default BrowseCrew;

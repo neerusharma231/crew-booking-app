@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { CloseIcon, Hamburger } from "./icons";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -22,23 +23,26 @@ const Navbar = () => {
           <ul
             className='hidden md:flex items-center gap-10 font-medium text-lg'
           >
-            <li
-              onClick={() => setOpen(false)}
-              className="cursor-pointer hover:underline hover:text-gray-400 transition duration-300"
-            >
+            <li>
+            <Link to='/'  className="cursor-pointer hover:underline hover:text-gray-400 transition duration-300">
+            
               Home
+              </Link>
             </li>
-            <li
-              onClick={() => setOpen(false)}
+            <li>
+              <Link to='/browse-crew'
               className="cursor-pointer hover:underline hover:text-gray-400 transition duration-300"
             >
               Browse
+              </Link>
             </li>
-            <li
+            <li>
+              <Link to='/dashboard'
               onClick={() => setOpen(false)}
               className="cursor-pointer hover:underline hover:text-gray-400 transition duration-300"
             >
               Dashboard
+              </Link>
             </li>
           </ul>
         </div>
@@ -47,22 +51,16 @@ const Navbar = () => {
             className='md:hidden flex flex-col items-center gap-6 py-6 font-medium text-lg border-t border-gray-800'
           >
             <li
-              onClick={() => setOpen(false)}
-              className="cursor-pointer hover:underline hover:text-gray-400 transition duration-300"
-            >
-              Home
+              onClick={() => setOpen(false)}>
+             <Link to="/">Home</Link>
             </li>
             <li
-              onClick={() => setOpen(false)}
-              className="cursor-pointer hover:underline hover:text-gray-400 transition duration-300"
-            >
-              Browse
+              onClick={() => setOpen(false)}>
+               <Link to="/browse-crew">Browse</Link>
             </li>
             <li
-              onClick={() => setOpen(false)}
-              className="cursor-pointer hover:underline hover:text-gray-400 transition duration-300"
-            >
-              Dashboard
+              onClick={() => setOpen(false)}>
+               <Link to="/dashboard">Dashboard</Link>
             </li>
           </ul>
         )}
